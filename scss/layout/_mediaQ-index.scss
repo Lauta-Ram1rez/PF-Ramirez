@@ -1,0 +1,85 @@
+
+@media (max-width: 990px){
+    /**---------------------------------------------------
+PORTADA          
+------------------------------------------------------*/
+.inicio{
+    width: 100%;
+    height: 900px;
+    background-image: url('/assets/img/index/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .gridd{
+        display: grid;
+        grid-template-columns:10% repeat(5,1fr) 10% ;
+        grid-template-rows:repeat(100px 3, 1fr 100px) ;
+        grid-template-areas: 
+        ".   .   .   .   .     .   ."
+        ".   .   tys tys tys   .    ."
+        ".   .   img1 . img2   .    ."
+        ".   .   img1 . img2   .    ."
+        ".   .   .   .   .     .    ."
+        ;
+    }img1 img2
+    .tys{
+        grid-area: tys;
+        h1{
+            background-color: rgba(208, 226, 241, 0.384);
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            width: 450px;
+            font-size: 40px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+        p{
+            width: 500px;
+            font-size: 15px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+    }
+    .img1{
+        grid-area: img1;
+        padding: 10px;
+        img{
+            width: 200px;
+            height: 350px;
+            border-top-right-radius:15px ;
+            border-bottom-left-radius: 15px;
+        }
+    }
+    .img2{
+        grid-area: img2;
+        padding: 10px;
+    
+        img{
+            width: 200px;
+            height: 350px;
+            border-top-left-radius:15px ;
+            border-bottom-right-radius: 15px;
+        }
+    }
+}
+/**---------------------------------------------------
+SUB TITULO          
+------------------------------------------------------*/
+
+
+.flex-index{
+    width: 100%;
+    height: 950px;
+.card-index{
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    height: 370px;
+    border-radius: 15px;
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+    img{
+        width: 100%;
+    border-radius: 15px;
+    }
+}}}

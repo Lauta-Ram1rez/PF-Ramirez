@@ -1,0 +1,131 @@
+/**---------------------------------------------------
+PORTADA          
+------------------------------------------------------*/
+.inicio{
+    width: 100%;
+    height: 600px;
+    background-image: url('/assets/img/index/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .gridd{
+        display: grid;
+        grid-template-columns:10% repeat(5,1fr) 10%x ;
+        grid-template-rows:repeat(5, 1fr) ;
+        grid-template-areas: 
+        ". .   .   .    .    .     ."
+        ". .   .   .   img1 img2  ."
+        ". tys tys .   img1 img2  ."
+        ". tys tys .   img1 img2  ."
+        ".   .   . .   .    .     ."
+        ;
+    }
+    .tys{
+        grid-area: tys;
+        h1{
+            background-color: rgba(208, 226, 241, 0.384);
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            width: 500px;
+            font-size: 50px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+        p{
+            width: 500px;
+            font-size: 20px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+    }
+    .img1{
+        grid-area: img1;
+        padding: 10px;
+        img{
+            width: 200px;
+            height: 350px;
+            border-top-right-radius:15px ;
+            border-bottom-left-radius: 15px;
+        }
+    }
+    .img2{
+        grid-area: img2;
+        padding: 10px;
+    
+        img{
+            width: 200px;
+            height: 350px;
+            border-top-left-radius:15px ;
+            border-bottom-right-radius: 15px;
+        }
+    }
+}
+/**---------------------------------------------------
+SUB TITULO          
+------------------------------------------------------*/
+
+.sub{
+    @extend .titulo-u
+}
+
+.flex-index{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgb(26,38,52);
+background: linear-gradient(0deg, rgba(26,38,52,1) 0%, rgba(0,114,255,1) 100%);
+/**---------------------------------------------------
+CARD         
+------------------------------------------------------*/
+.card-index{
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    height: 370px;
+    border-radius: 15px;
+    position: relative;
+    img{
+        width: 100%;
+    border-radius: 15px;
+    }
+}
+.precio-index{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    p{
+        text-align: center;
+        width: 70px;
+        font-family: $tipografia-sub-p;
+        font-weight: 600;
+        background-color: rgb(255, 255, 255);
+        border:solid 1px black;
+        border-radius: 3px;
+    }
+}
+.card-h3-index{
+    width: 100%;
+    height: 40px;
+    h3{
+        margin-top: 20px ;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 900;
+        color: rgb(0, 0, 0);
+        font-family: $tipografia-sub-p ;
+        letter-spacing:0.26em;
+    }
+    
+}
+.boton-index{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button{
+        border:solid 1px  rgb(255, 255, 255);
+        border-radius: 40px;
+    }
+}
+}
