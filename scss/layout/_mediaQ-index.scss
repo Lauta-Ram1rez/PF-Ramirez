@@ -65,24 +65,6 @@
 
 @media (max-width: 650px){
     .inicio{
-        width: 100%;
-        height: 600px;
-        .gridd{
-            width: 100%;
-            height: 600px;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr)  ;
-            grid-template-rows:  repeat(6, 1fr)  ;
-            grid-template-areas: 
-            ".      .      .        ."
-            ".      tys    tys      ."
-            ".      tys1   tys1     ."
-            ".      img1   img2     ."
-            ".      img1   img2     ."
-            ".      .      .        ."
-            
-            ;
-        }
         .titulo-index {
             width: 350px;
             h1{
@@ -104,14 +86,49 @@
             }
         }
         .img2{
-
             img{
                 width: 150px;
                 height: 250px;
             }
         }
     }
-    .flex-index{
-        height: 2000px;
 }
+@media (max-width: 559px){
+    .flex-index{
+        width: 100%;
+        height: 2000px;
+    }
+}
+@media (max-width: 424px){
+    .inicio{
+        height: 500px;
+        .gridd{
+            height: 500px;
+        }
+        .titulo-index {
+            width: 275px;
+            h1{
+                width: 275px;
+                font-size: 30px;
+            }
+        }
+            .sub-index {
+                p{
+                    width: 290px;
+                    font-size: 12px;
+                }
+            }
+        .img1{
+            img{
+                width: 100px;
+                height: 180px;
+            }
+        }
+        .img2{
+            img{
+                width: 100px;
+                height: 180px;
+            }
+        }
+    }
 }
