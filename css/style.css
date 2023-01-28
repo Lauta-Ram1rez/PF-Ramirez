@@ -628,6 +628,22 @@ SUB TITULO
   letter-spacing: 0.5em;
 }
 
+@media (max-width: 2000px) {
+  .flex-index {
+    height: 700px;
+  }
+}
+@media (max-width: 1200px) {
+  .flex-index {
+    height: 1000px;
+  }
+  .flex-index .card-index {
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    height: 370px;
+    margin: 20px;
+  }
+}
 @media (max-width: 990px) {
   /**---------------------------------------------------
   PORTADA          
@@ -635,9 +651,6 @@ SUB TITULO
   .inicio {
     width: 100%;
     height: 900px;
-    background-image: url("/assets/img/index/fondo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   .inicio .gridd {
     display: grid;
@@ -645,43 +658,23 @@ SUB TITULO
     grid-template-rows: repeat(100px 3, 1fr 100px);
     grid-template-areas: ".   .   .   .   .     .   ." ".   .   tys tys tys   .    ." ".   .   img1 . img2   .    ." ".   .   img1 . img2   .    ." ".   .   .   .   .     .    .";
   }
-  .inicio img1 img2 .tys {
-    grid-area: tys;
+  .inicio .tys {
+    margin: 10px;
   }
-  .inicio img1 img2 .tys h1 {
-    background-color: rgba(208, 226, 241, 0.384);
+  .inicio .tys h1 {
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
-    width: 450px;
-    font-size: 40px;
-    text-align: center;
-    color: rgb(255, 255, 255);
+    width: 510px;
+    font-size: 45px;
   }
-  .inicio img1 img2 .tys p {
-    width: 500px;
-    font-size: 15px;
-    text-align: center;
-    color: rgb(255, 255, 255);
+  .inicio .tys p {
+    width: 510px;
   }
   .inicio .img1 {
-    grid-area: img1;
     padding: 10px;
-  }
-  .inicio .img1 img {
-    width: 200px;
-    height: 350px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
   }
   .inicio .img2 {
-    grid-area: img2;
     padding: 10px;
-  }
-  .inicio .img2 img {
-    width: 200px;
-    height: 350px;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
   }
   /**---------------------------------------------------
   SUB TITULO          
