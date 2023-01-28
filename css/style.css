@@ -31,21 +31,23 @@ PORTADA
 ------------------------------------------------------*/
 .inicio {
   width: 100%;
-  height: 600px;
+  height: 700px;
   background-image: url("../assets/img/index/fondo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .inicio .gridd {
+  width: 100%;
+  height: 700px;
   display: grid;
   grid-template-columns: 10% repeat(5, 1fr) 10% x;
   grid-template-rows: repeat(5, 1fr);
-  grid-template-areas: ". .   .   .    .    .     ." ". .   .   .   img1 img2  ." ". tys tys .   img1 img2  ." ". tys tys .   img1 img2  ." ".   .   . .   .    .     .";
+  grid-template-areas: ". .   .   .    .    .     ." ". .   .   .   img1 img2  ." ". tys tys .   img1 img2  ." ". tys1 tys1 .   img1 img2  ." ".   .   . .   .    .     .";
 }
-.inicio .tys {
+.inicio .titulo-index {
   grid-area: tys;
 }
-.inicio .tys h1 {
+.inicio .titulo-index h1 {
   background-color: rgba(208, 226, 241, 0.384);
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
@@ -54,7 +56,10 @@ PORTADA
   text-align: center;
   color: rgb(255, 255, 255);
 }
-.inicio .tys p {
+.inicio .sub-index {
+  grid-area: tys1;
+}
+.inicio .sub-index p {
   width: 500px;
   font-size: 20px;
   text-align: center;
@@ -62,7 +67,7 @@ PORTADA
 }
 .inicio .img1 {
   grid-area: img1;
-  padding: 10px;
+  margin: 10px;
 }
 .inicio .img1 img {
   width: 200px;
@@ -72,7 +77,7 @@ PORTADA
 }
 .inicio .img2 {
   grid-area: img2;
-  padding: 10px;
+  margin: 10px;
 }
 .inicio .img2 img {
   width: 200px;
@@ -86,7 +91,7 @@ SUB TITULO
 ------------------------------------------------------*/
 .flex-index {
   width: 100%;
-  height: 600px;
+  height: 800px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -103,6 +108,7 @@ SUB TITULO
   height: 370px;
   border-radius: 15px;
   position: relative;
+  margin: 15px;
 }
 .flex-index .card-index img {
   width: 100%;
@@ -628,62 +634,96 @@ SUB TITULO
   letter-spacing: 0.5em;
 }
 
-@media (max-width: 1200px) {
-  .flex-index {
-    height: 1000px;
-  }
-  .flex-index .card-index {
-    background-color: rgb(255, 255, 255);
-    width: 250px;
-    height: 370px;
-    margin: 20px;
-  }
-}
 @media (max-width: 990px) {
   .inicio {
     width: 100%;
-    height: 700px;
+    height: 800px;
   }
   .inicio .gridd {
+    width: 100%;
+    height: 800px;
     display: grid;
-    grid-template-columns: 10% repeat(5, 1fr) 10%;
-    grid-template-rows: 10% repeat(3, 1fr) 10%;
-    grid-template-areas: ".   .   .   .   .     .   ." ".   .   tys tys tys   .    ." ".   .   img1 . img2   .    ." ".   .   img1 . img2   .    ." ".   .   .   .   .     .    .";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: ".      .      .        ." ".      tys    tys      ." ".      tys1   tys1     ." ".      img1   img2     ." ".      img1   img2     ." ".      .      .        .";
   }
-}
-@media (max-width: 778px) {
-  .tys h1 {
-    background-color: rgba(208, 226, 241, 0.384);
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    width: 100px;
-    font-size: 40px;
-    text-align: center;
-    color: rgb(255, 255, 255);
+  .inicio .titulo-index {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
   }
-  .tys p {
-    width: 500px;
-    font-size: 20px;
-    text-align: center;
-    color: rgb(255, 255, 255);
+  .inicio .titulo-index h1 {
+    width: 600px;
+    font-size: 50px;
   }
-  .img1 {
-    grid-area: img1;
-    padding: 10px;
+  .inicio .sub-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
   }
-  .img1 img {
-    width: 150px;
+  .inicio .sub-index p {
+    width: 400px;
+    font-size: 17px;
+  }
+  .inicio .img1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .inicio .img1 img {
+    width: 200px;
     height: 300px;
   }
-  .img2 {
-    grid-area: img2;
-    padding: 10px;
+  .inicio .img2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .img2 img {
+  .inicio .img2 img {
     width: 200px;
-    height: 350px;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    height: 300px;
+  }
+  .flex-index {
+    height: 1000px;
+  }
+}
+@media (max-width: 650px) {
+  .inicio {
+    width: 100%;
+    height: 600px;
+  }
+  .inicio .gridd {
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: ".      .      .        ." ".      tys    tys      ." ".      tys1   tys1     ." ".      img1   img2     ." ".      img1   img2     ." ".      .      .        .";
+  }
+  .inicio .titulo-index {
+    width: 350px;
+  }
+  .inicio .titulo-index h1 {
+    width: 350px;
+    font-size: 35px;
+  }
+  .inicio .sub-index p {
+    width: 400px;
+    font-size: 14px;
+  }
+  .inicio .img1 img {
+    width: 150px;
+    height: 250px;
+  }
+  .inicio .img2 img {
+    width: 150px;
+    height: 250px;
+  }
+  .flex-index {
+    height: 2000px;
   }
 }
 @media (max-width: 990px) {

@@ -1,71 +1,117 @@
-
-@media (max-width: 1200px){
-    .flex-index{
-        height: 1000px;
-    .card-index{
-        background-color: rgb(255, 255, 255);
-        width: 250px;
-        height: 370px;
-        margin: 20px;
-    }}
-}
 @media (max-width: 990px){
     .inicio{
         width: 100%;
-        height: 700px;
+        height: 800px;
         .gridd{
+            width: 100%;
+            height: 800px;
             display: grid;
-            grid-template-columns:10% repeat(5,1fr) 10% ;
-            grid-template-rows: 10% repeat(3, 1fr) 10% ;
+            grid-template-columns: repeat(4, 1fr)  ;
+            grid-template-rows:  repeat(6, 1fr)  ;
             grid-template-areas: 
-            ".   .   .   .   .     .   ."
-            ".   .   tys tys tys   .    ."
-            ".   .   img1 . img2   .    ."
-            ".   .   img1 . img2   .    ."
-            ".   .   .   .   .     .    ."
+            ".      .      .        ."
+            ".      tys    tys      ."
+            ".      tys1   tys1     ."
+            ".      img1   img2     ."
+            ".      img1   img2     ."
+            ".      .      .        ."
+            
             ;
         }
+        .titulo-index {
+            width: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            h1{
+                width: 600px;
+                font-size: 50px;
+            }
+        }
+            .sub-index {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                p{
+                    width: 400px;
+                    font-size: 17px;
+                }
+            }
+        .img1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 200px;
+                height: 300px;
+            }
+        }
+        .img2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 200px;
+                height: 300px;
+            }
+        }
     }
+    .flex-index{
+        height: 1000px;
 }
-@media (max-width: 778px){
-    .tys{
-        h1{
-            background-color: rgba(208, 226, 241, 0.384);
-            border-top-right-radius: 50px;
-            border-bottom-left-radius: 50px;
-            width: 100px;
-            font-size: 40px;
-            text-align: center;
-            color: rgb(255, 255, 255);
-        }
-        p{
-            width: 500px;
-            font-size: 20px;
-            text-align: center;
-            color: rgb(255, 255, 255);
-        }
-    }
-    .img1{
-        grid-area: img1;
-        padding: 10px;
-        img{
-            width: 150px;
-            height: 300px;
-        }
-    }
-    .img2{
-        grid-area: img2;
-        padding: 10px;
-    
-        img{
-            width: 200px;
-            height: 350px;
-            border-top-left-radius:15px ;
-            border-bottom-right-radius: 15px;
-        }
-    }
 }
-    
-@media (max-width: 778px){
 
+@media (max-width: 650px){
+    .inicio{
+        width: 100%;
+        height: 600px;
+        .gridd{
+            width: 100%;
+            height: 600px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr)  ;
+            grid-template-rows:  repeat(6, 1fr)  ;
+            grid-template-areas: 
+            ".      .      .        ."
+            ".      tys    tys      ."
+            ".      tys1   tys1     ."
+            ".      img1   img2     ."
+            ".      img1   img2     ."
+            ".      .      .        ."
+            
+            ;
+        }
+        .titulo-index {
+            width: 350px;
+            h1{
+                width: 350px;
+                font-size: 35px;
+            }
+        }
+            .sub-index {
+                p{
+                    width: 400px;
+                    font-size: 14px;
+                }
+            }
+        .img1{
+
+            img{
+                width: 150px;
+                height: 250px;
+            }
+        }
+        .img2{
+
+            img{
+                width: 150px;
+                height: 250px;
+            }
+        }
+    }
+    .flex-index{
+        height: 2000px;
+}
 }
