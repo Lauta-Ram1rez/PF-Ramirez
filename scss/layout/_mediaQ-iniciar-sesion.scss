@@ -1,0 +1,105 @@
+@media (max-width: 990px){
+    .fondo-iniciarsesion {
+        background-color: black;
+    
+    .grid-iniciarsesion{
+        width: 100%;
+        height: 600px;
+        display: grid;
+        grid-template-columns:repeat(3, 1fr) ;
+        grid-template-rows:repeat(7, 1fr);
+        grid-template-areas:
+        ".       .        . "
+        "initit      initit    initit "
+        ".      inisub    . "
+        ".      iniform   . "
+        ".      iniform   . "
+        ".      iniform   . "
+        ".       .        . "
+        ;
+    }
+    .titulo-iniciarsesion {
+        width: 100%;
+        height: 80px;
+    }
+    .sub-iniciarsesion {
+        width: 300px;
+        background: rgb(26,38,52);
+        background: linear-gradient(180deg, rgba(26,38,52,1) 0%, rgba(0,0,0,1) 100%);
+    }
+    .form-iniciarsesion {
+        height: 350px;
+
+        input{
+            background-color: rgb(255, 255, 255);
+            margin: 30px;
+            font-size: 20px;
+            border-radius: 20px;
+            text-align: center;
+            border: rgb(255, 255, 255);
+            font-family: $tipografia-sub-p;
+        }
+        a{
+            text-align: center;
+            font-family: $tipografia-sub-p;
+        }
+        button{
+            text-decoration: none;
+            font-family: $tipografia-sub-p;
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            min-width: 130px;
+            height: 40px;
+            color: rgb(0, 0, 0);
+            padding: 5px 10px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+            outline: none;
+            overflow: hidden;
+            border-radius: 5px;
+            border: none;
+            background-color: #ffffff
+        }
+        button:hover {
+            border-radius: 5px;
+            padding-right: 24px;
+            padding-left:8px;
+        }
+        button:hover:after {
+            opacity: 1;
+            right: 10px;
+        }
+        button:after {
+            content: "\00BB";
+            position: absolute;
+            opacity: 0;
+            font-size: 20px;
+            line-height: 40px;
+            top: 0;
+            right: -20px;
+            transition: 0.4s;
+        }
+    }
+    }
+    .sorteo{
+        background-position: center;
+        h3{
+            font-size: 50px;
+        }
+}
+}
+@media (max-width: 768px){
+    .sorteo{
+        background-position: center;
+        h3{
+            font-size: 40px;
+        }
+}
+}

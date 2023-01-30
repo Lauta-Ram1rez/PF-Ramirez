@@ -5,21 +5,23 @@
         font-weight: 900;
     }
 }
+.fondo-tienda{
+    width: 100%;
+    height: 800px;
+}
 .grid{
     display: flex;
     justify-content: center;
-    gap: 30px;
-    margin-top: 50px;
+    align-items: center;
     display: grid;
     width: 100%;
-    height: 700px;
+    height: 800px;
     grid-template-columns: auto auto ;
     grid-template-rows:auto auto;
     grid-template-areas: 
     "card1  card2  card3 card4 "
-    "card1  card2  card3 card4 "
     "card5  card6  card7 card8 "
-    "card5  card6  card7 card8 "
+
     ;
 }
 .card-body{
@@ -47,25 +49,34 @@
     }
 }
 .card1{
+    margin: 20px;
     @include grid(card1)
 }
 .card2{
+    margin: 20px;
     @include grid(card2)
 }
 .card3{
+    margin: 20px;
     @include grid(card3)
-}.card4{
+}
+.card4{
+    margin: 20px;
     @include grid(card4)
 }
 .card5{
+    margin: 20px;
     @include grid(card5)
 }
 .card6{
+    margin: 20px;
     @include grid(card6)
 }
 .card7{
+    margin: 20px;
     @include grid(card7)
 }
 .card8{
+    margin: 20px;
     @include grid(card8)
 }
