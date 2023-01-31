@@ -321,7 +321,9 @@ SUB TITULO
 
 .formulario1 {
   width: 100%;
-  height: 800px;
+  height: 700px;
+  background: rgb(26, 38, 52);
+  background: linear-gradient(180deg, rgb(26, 38, 52) 0%, rgb(0, 0, 0) 100%);
 }
 
 .cont1 {
@@ -332,6 +334,8 @@ SUB TITULO
   align-items: center;
 }
 .cont1 input {
+  margin-top: 20px;
+  background-color: rgb(255, 255, 255);
   text-align: center;
   font-size: 20px;
   font-family: "Josefin Sans", sans-serif;
@@ -360,6 +364,8 @@ SUB TITULO
   align-items: center;
 }
 .cont2 input {
+  margin-top: 20px;
+  background-color: rgb(255, 255, 255);
   text-align: center;
   font-size: 20px;
   font-family: "Josefin Sans", sans-serif;
@@ -388,6 +394,7 @@ SUB TITULO
   align-items: center;
 }
 .cont3 textarea {
+  background-color: rgb(255, 255, 255);
   font-size: 20px;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 450;
@@ -412,7 +419,7 @@ SUB TITULO
   text-decoration: none;
   min-width: 130px;
   height: 40px;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   padding: 5px 10px;
   font-weight: bold;
   cursor: pointer;
@@ -423,7 +430,7 @@ SUB TITULO
   overflow: hidden;
   border-radius: 5px;
   border: none;
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 .boton:hover {
@@ -451,6 +458,8 @@ SUB TITULO
 .informacion {
   display: flex;
   align-items: center;
+  background: rgb(26, 38, 52);
+  background: linear-gradient(0deg, rgb(26, 38, 52) 0%, rgb(0, 0, 0) 100%);
 }
 
 .caja1 {
@@ -465,9 +474,11 @@ SUB TITULO
 }
 .caja2 p {
   margin-bottom: 30px;
+  color: #ffffff;
 }
 .caja2 h2 {
   margin-bottom: 30px;
+  color: #ffffff;
 }
 
 .fondo-iniciarsesion {
@@ -755,6 +766,24 @@ SUB TITULO
     width: 100px;
     height: 180px;
   }
+  .flex-index {
+    height: 1400px;
+  }
+  .flex-index .card-index {
+    width: 200px;
+    height: 320px;
+    margin: 10px;
+  }
+  .flex-index .precio-index p {
+    font-size: 15px;
+    width: 55px;
+  }
+  .flex-index .card-h3-index h3 {
+    font-size: 12px;
+  }
+  .flex-index .boton-index button {
+    font-size: 12px;
+  }
 }
 @media (max-width: 990px) {
   .tienda h1 {
@@ -901,9 +930,6 @@ SUB TITULO
   }
 }
 @media (max-width: 990px) {
-  .fondo-iniciarsesion {
-    background-color: black;
-  }
   .fondo-iniciarsesion .grid-iniciarsesion {
     width: 100%;
     height: 600px;
@@ -924,62 +950,6 @@ SUB TITULO
   .fondo-iniciarsesion .form-iniciarsesion {
     height: 350px;
   }
-  .fondo-iniciarsesion .form-iniciarsesion input {
-    background-color: rgb(255, 255, 255);
-    margin: 30px;
-    font-size: 20px;
-    border-radius: 20px;
-    text-align: center;
-    border: rgb(255, 255, 255);
-    font-family: "Josefin Sans", sans-serif;
-  }
-  .fondo-iniciarsesion .form-iniciarsesion a {
-    text-align: center;
-    font-family: "Josefin Sans", sans-serif;
-  }
-  .fondo-iniciarsesion .form-iniciarsesion button {
-    text-decoration: none;
-    font-family: "Josefin Sans", sans-serif;
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .fondo-iniciarsesion .form-iniciarsesion button {
-    min-width: 130px;
-    height: 40px;
-    color: rgb(0, 0, 0);
-    padding: 5px 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    overflow: hidden;
-    border-radius: 5px;
-    border: none;
-    background-color: #ffffff;
-  }
-  .fondo-iniciarsesion .form-iniciarsesion button:hover {
-    border-radius: 5px;
-    padding-right: 24px;
-    padding-left: 8px;
-  }
-  .fondo-iniciarsesion .form-iniciarsesion button:hover:after {
-    opacity: 1;
-    right: 10px;
-  }
-  .fondo-iniciarsesion .form-iniciarsesion button:after {
-    content: "»";
-    position: absolute;
-    opacity: 0;
-    font-size: 20px;
-    line-height: 40px;
-    top: 0;
-    right: -20px;
-    transition: 0.4s;
-  }
   .sorteo {
     background-position: center;
   }
@@ -992,7 +962,7 @@ SUB TITULO
     background-position: center;
   }
   .sorteo h3 {
-    font-size: 40px;
+    font-size: 37px;
   }
 }
 @media (max-width: 800px) {

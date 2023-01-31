@@ -131,4 +131,29 @@
             }
         }
     }
+    .flex-index{
+        height: 1400px;
+    .card-index{
+        width: 200px;
+        height: 320px;
+        margin: 10px;
+    }
+    .precio-index{
+        p{
+            font-size: 15px;
+            width: 55px;
+        }
+    }
+    .card-h3-index{
+        h3{
+            font-size: 12px;
+        }
+        
+    }
+    .boton-index{
+        button{
+            font-size: 12px;
+        }
+    }
+    }
 }
