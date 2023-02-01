@@ -147,6 +147,8 @@ SUB TITULO
   align-items: center;
 }
 .flex-index .boton-index button {
+  background-color: black;
+  color: rgb(255, 255, 255);
   border: solid 1px rgb(255, 255, 255);
   border-radius: 40px;
 }
